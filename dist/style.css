@@ -1,12 +1,13 @@
 :root {
-  --black: #123C69;
-  --main: #EDC7B7;
+  --black: white;
+  --main: #2e1114;
 }
 
 html, body {
   padding:0;
   margin: 0;
   background-color: var(--main);
+  width: 100%;
 }
 
 #loading {
@@ -17,9 +18,9 @@ html, body {
   font-size: 70px;
   background-color: black;
   color: white;
-  height: 100vh;
+  height: 105vh;
   width: 100vw;
-  z-index: 1;
+  z-index: 2;
 }
 
 .name span {
@@ -39,30 +40,84 @@ html, body {
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: calc(100vh - 2em);
-  font-size: 80px;
+  align-items:center;
+  flex-direction: column;
+  padding-top: 5em;
+  gap: 10px;
+  background-image: url('../gray_line_drawings_of_organic_shapes_background.jpg');
+  background-size: cover;
 }
 
 
+#main-box {
+  background-color: #ffc800;
+  width: 90%;
+  height: calc(100vh - 4em);
+}
+
 header {
+  font-size: 2em;
+  font-family: 'Karla',sans-serf;
+  color: var(--main);
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content:space-between;
-  font-size: 2em;
-  font-family: 'Karla',sans-serf;
-  height: 2em;
-  color: var(--black);
-  padding: 0 5% 0 5%;
+  width: 100%;
+  background-color:white;
+  padding-right: 20px;
+  border-bottom: 10px solid var(--main);
+  z-index: 1;
 }
+
+.favorite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 20px;
+  width: 90%;
+}
+
+#gallery-one, #gallery-two{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#favorite-photos {
+  max-width: 32%;
+}
+
+#order-btn {
+  padding: 10px 20px 10px 20px;
+  background-color: #2e1114;
+  color: white;
+  font-size: 25px;
+  font-family: 'Vollkorn',serif;
+  margin-top: 25%;
+}
+
 
 .nav-menu {
   display: flex;
   justify-content:center;
   align-items: center;
-  width: 20vw;
-  
   list-style-type: none;
+  padding-inline-start: 0px;
 }
 
 .nav-menu > li {
@@ -89,7 +144,7 @@ header {
   justify-content: center;
   gap: 3px;
   cursor: pointer;
-  padding-right: 20px;
+  margin-right: 5px;
 }
 
 .bar {
@@ -104,7 +159,7 @@ header {
     height: 100%;
   }
   .nav-menu > li:hover {
-    background-color: var(--black);
+    background-color: white;
     color: var(--main);
   }
 
@@ -158,15 +213,62 @@ header {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  header {
+    height: 2em;
+  }
   }
 
 #intro > img {
-  width: 35%;
+  width: 40%;
+  position: relative;
+  bottom: 600px;
+  right: -350px;
 }
 
 #intro {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: calc(100vh - 2em);
+
 }
 
+#main-title-three {
+  font-size: 70px;
+}
+
+.main-title {
+  /* translate: 10% 20%; */
+  font-family: 'Oswald', sans-serif;
+  width: max-content;
+  font-size: 90px;
+  color: #2e1114;
+  padding-left: 8%;
+  padding-top: 5%;
+}
+
+.about-us {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 90%;
+  background-color: #2e1114;
+  display: flex;
+  justify-content: center;
+  gap: 30%;
+  padding: 50px 0 50px 0;
+}
+
+.about-us-left  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+}
+
+.about-us-left > div, .about-us-right > div{
+  color: white;
+}
+
+.about-us-right {
+  font-size: 25px;
+}
