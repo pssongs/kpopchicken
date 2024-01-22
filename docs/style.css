@@ -43,14 +43,14 @@ html, body {
   flex-direction: column;
   padding-top: 5em;
   gap: 10px;
-  background-image: url('../photos/gray_line_drawings_of_organic_shapes_background.jpg');
+  background-image: url('./photos/gray_line_drawings_of_organic_shapes_background.jpg');
   background-size: cover;
 }
 
 
 #main-box {
   /* background-color: #ffd22f; */
-  background-image: url('../photos/4.jpg');
+  background-image: url('./photos/4.jpg');
   background-size: cover;
   background-position: center right;
   width: 90%;
