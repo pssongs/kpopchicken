@@ -7,19 +7,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Vollkorn:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <!-- <div id="loading"></div> -->
     <header>
       <div class="name">
-        <span>KPOP Rice Flour Chicken.</span>
+        <span onclick="window.location = '../dist/index.html'">KPOP Rice Flour Chicken.</span>
       </div>
       <ul class="nav-menu">
-        <li class="nav-item" id="home">Home</li>
+        <li class="nav-item" id="home" onclick="window.location = '../dist/index.html'">Home</li>
         <li class="nav-item" id="menu">Menu</li>
-        <li class="nav-item" id="order">Order</li>
-        <li class="nav-item" id="contact">Contact</li>
+        <li class="nav-item" id="order"><a href="https://www.doordash.com/store/k-pop-rice-flour-chicken-anaheim-24049600/" target="_blank">Order</a></li>
+        <li class="nav-item" id="contact" onclick="window.scrollTo(0, document.body.scrollHeight)">Contact</li>
       </ul>
       <div class="hamburger">
         <div class="bar"></div>
@@ -33,42 +34,46 @@
           <div id="main-title-one">A Healthier Tastier</div>
           <div id="main-title-two">Korean Fried Chicken</div>
           <div id="main-title-three">IT'S HOT!</div>
-          <button id="order-btn">Order Online</button>
+          <a href="https://www.doordash.com/store/k-pop-rice-flour-chicken-anaheim-24049600/" target="_blank"><button id="order-btn">Order Online</button></a>
         </div>
-        <div id="intro">
-          <img src="../chicken.png" alt="Number 6 half half chicken">
-        </div>
+        <!-- <div id="intro">
+          <img src="../photos/chicken.png" alt="Number 6 half half chicken"> -->
+        <!-- </div>  -->
       </div>
       <div class="favorite">
-        <div>Our Favorites!</div>
+        <div id="our-favorites">Our Favorites!</div>
         <div class="gallery">
-          <div id="gallery-one">
-            <img src="../2.jpg" alt="Number 6 half half chicken" id="favorite-photos">
-            <img src="../3.jpg" alt="Number 6 half half chicken" id="favorite-photos">
-            <img src="../5.jpg" alt="Number 6 half half chicken" id="favorite-photos">
-          </div>
-          <div id="gallery-two">
-            <img src="../4.jpg" alt="Number 6 half half chicken" id="favorite-photos">
-            <img src="../3.jpg" alt="Number 6 half half chicken" id="favorite-photos">
-            <img src="../5.jpg" alt="Number 6 half half chicken" id="favorite-photos">
-          </div>
+            <img src="../photos/2.jpg" alt="Number 6 half half chicken" id="favorite-photos">
+            <img src="../photos/3.jpg" alt="Number 6 half half chicken" id="favorite-photos">
+            <img src="../photos/5.jpg" alt="Number 6 half half chicken" id="favorite-photos">
+            <img src="../photos/4.jpg" alt="Number 6 half half chicken" id="favorite-photos">
+            <img src="../photos/3.jpg" alt="Number 6 half half chicken" id="favorite-photos">
+            <img src="../photos/5.jpg" alt="Number 6 half half chicken" id="favorite-photos">
+
       </div>
 
       </div>
       <div class="about-us">
         <div class="about-us-left">
           <div>Location</div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.202848908553!2d-117.99134412399935!3d33.832879029281045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd296f5b250d47%3A0x8f9b5f8475fcf629!2sKpop%20Rice%20Flour%20Chicken(Old%20Ssal%20Chicken%20%232)!5e0!3m2!1sen!2sus!4v1705656942219!5m2!1sen!2sus" width="400px" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.202848908553!2d-117.99134412399935!3d33.832879029281045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd296f5b250d47%3A0x8f9b5f8475fcf629!2sKpop%20Rice%20Flour%20Chicken(Old%20Ssal%20Chicken%20%232)!5e0!3m2!1sen!2sus!4v1705656942219!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="about-us-right">
           <div id="hours">
-            <div>We're Open</div>
-            <div>Sun: 2PM - 10PM (Last Call: 9:30PM)</div>
-            <div>M-S: 4PM - 1AM (Last Call: 12AM)</div>
+            <div id="open">We're Open</div>
+            <div id="open-hours">
+              <div>Sun: 2PM - 10PM (Last Call: 9:30PM)</div>
+              <div>Mon - Sat: 4PM - 1AM (Kitchen Last Call: 12AM)</div>
+            </div>
+          </div>
+          <div id="number">
+            <div id="call-us">Call Us At</div>
+            <div id="phone-number">714-995-1500</div>
           </div>
         </div>
       </div>
     </div> 
-    <script src="../src/index.js"></script>
+    <footer>&copy; 2024 by Kpop Rice Flour Chicken, Anaheim, CA, 92801  </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
