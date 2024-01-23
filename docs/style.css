@@ -56,6 +56,8 @@ html, body {
   width: 90%;
   /* height: calc(100vh - 4em); */
   padding-bottom: 10%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 header {
@@ -83,11 +85,13 @@ header {
   background-color: white;
   width: 90%;
   margin-top: 30px;
+  border-radius: 20px;
 }
 
 #our-favorites {
   font-size: 50px;
   font-family: 'Oswald', sans-serif;
+
 }
 
 .gallery {
@@ -198,7 +202,7 @@ header {
 
 .main-title > div {
   -webkit-text-stroke: 2px var(--main);
-  font-size: 6vw;
+  font-size: 5vw;
 }
 
 .about-us {
@@ -210,6 +214,8 @@ header {
   gap: 20%;
   padding: 50px 0 50px 0;
   font-family: 'Fira Sans', sans-serif;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .about-us-left  {
@@ -251,7 +257,7 @@ footer {
   font-size: 15px;
   width: 100%;
   display: flex;
-  color: #2e1114;
+  color: var(--main);
   justify-content: center;
   align-items: center;
 }
@@ -280,6 +286,41 @@ a {
   margin: 50px 5% 0 5%;
 }
 
+.yelp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 50px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px 0px 30px 0px;
+  gap: 30px;
+  border: var(--main) 2px solid
+}
+
+#yelp-visit {
+  font-size: 3vw;
+  font-family: 'fira-sans', sans-serif;
+}
+
+#yelp-visit > a {
+  text-decoration: underline;
+  color: rgb(200, 3, 3);
+}
+
+.yelp-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yelp-img > img {
+  width: 28vw;
+  border-radius: 15px;
+}
+
 @media only screen and (min-width: 768px) {
   .nav-menu {
     height: 100%;
@@ -295,7 +336,7 @@ a {
   .gallery {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   padding: 20px;
   gap: 10px;
   }
@@ -303,11 +344,15 @@ a {
 }
 
 @media only screen and (max-width: 1168px){
-  .about-us {
+  .about-us,.yelp-img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5em;
+  }
+
+  .yelp-img > img {
+    width: 75vw;
   }
 
   .about-us-right {
@@ -365,4 +410,6 @@ a {
     height: 2.6em;
   }
   }
+
+
 
